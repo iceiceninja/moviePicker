@@ -1,0 +1,54 @@
+/* 
+    #FCFCFC - 
+    #F7567C
+    #FFFAE3
+    #99E1D9
+    #5D576B
+*/
+:root {
+    --main-bg-color: #F7567C;
+    /*white*/
+    --text-color: #FCFCFC;
+    /*bright pink:: Use white text*/
+    --neutral-color: #FFFAE3;
+    /*Corn silk*/
+    --option-color: #99E1D9;
+    /*Tiffany blue*/
+    --dark-accent-color: #5D576B;
+    /*Winge:: Use white text*/
+}
+
+#option1 {
+    color: #5D576B;
+    border: inset;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color: var(--option-color);
+
+}
+
+#movieNum {
+    border: 3px solid;
+    border-radius: 50%;
+    border-color: aqua;
+    background-color: orange;
+    color: yellow;
+    padding: .1%;
+    margin: 0%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1.5%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+
+}

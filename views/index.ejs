@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles.css">
+    <title>Movie Picker</title>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script data-main="app" src="../app.js"></script>
+    <script data-main="index" src="../scripts/index.js"></script>
+</head>
+
+<body>
+    <h1>Movie Picker</h1>
+    <button onclick="pageView('<%= id %>')">Choose</button>
+    <div id="option1">
+
+        <div id="movieNum">
+            <%= id %>
+        </div>
+        <h1>
+            <div id="movieName"><%= name1 %></div>
+        </h1>
+        <img src=<%=src1 %>>
+    </div>
+</body>
+
+</html>
