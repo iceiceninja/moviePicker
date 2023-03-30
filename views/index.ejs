@@ -5,26 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/styles.css">
     <title>Movie Picker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/styles.css">
+
     <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
     <script data-main="app" src="../app.js"></script>
     <script data-main="index" src="../scripts/index.js"></script>
 </head>
 
 <body>
-    <h1>Movie Picker</h1>
-    <button onclick="pageView('<%= id %>')">Choose</button>
-    <div id="option1">
-
-        <div id="movieNum">
-            <%= id %>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col">
+                <h1 id="pageName">Movie Picker</h1>
+            </div>
         </div>
-        <h1>
-            <div id="movieName"><%= name1 %></div>
-        </h1>
-        <img src=<%=src1 %>>
+        <div class="row" id="query">
+            <div class="col-lg-6">
+                <div id="option1" class="option">
+                    <h1>
+                        <div id="movieName">
+                            <%= name1 %>
+                        </div>
+                    </h1>
+                    <img src=<%=src1 %>>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div id="option2" class="option">
+                    <h1>
+                        <div id="movieName">
+                            <%= name1 %>
+                        </div>
+                    </h1>
+                    <img src=<%=src1 %>>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button onclick="pageView('<%= id %>')">
+                    <%= name1 %>
+                </button>
+            </div>
+
+            <div class="col-md-6">
+                <button onclick="pageView('<%= id %>')">
+                    <%= name1 %>
+                </button>
+            </div>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
