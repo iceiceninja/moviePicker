@@ -21,16 +21,27 @@
 body {
     background-color: var(--main-bg-color);
     color: var(--text-color);
+    overflow: hidden;
 }
-button 
-{
+
+button {
+    margin: 10%;
     border: solid var(--dark-accent-color);
     background-color: var(--neutral-color);
+    min-width: 10%;
 }
-img
-{
+
+img {
+    margin: 10%;
     border: solid var(--dark-accent-color);
+    width: 20%;
 }
+
+.option {
+    background-color: var(--option-color);
+    border: solid var(--dark-accent-color) 4px;
+}
+
 /* 
 #query {
     display: flex;
