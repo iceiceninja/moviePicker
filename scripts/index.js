@@ -1,20 +1,21 @@
 function pageView(keepId, changeId) {
-    //If isLeft is clicked, then the left button was clicked so increment right
     let url = new URL(window.location.href);
     if (Number(keepId) > Number(changeId)) {
-        changeId = Number(keepId) + 1
+        changeId = (Number(keepId) + 1)
     } else {
-        changeId = Number(changeId) +1
-    }
-    if (Number(changeId) >= 100) {
-        changeId = 1
+        changeId = (Number(changeId) + 1)
     }
 
     url.search = "?id=" + keepId + "&newid=" + (changeId);
 
     window.location.href = url.toString();
+
+    if (changeId > 100 || keepId > 100) {
+        reset();
+    }
 }
 function reset() {
+    console.log("RESET")
     let url = new URL(window.location.href);
     url.search = "?id=1&newid=2";
 
