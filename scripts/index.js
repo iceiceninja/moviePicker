@@ -10,7 +10,7 @@ function pageView(keepId, changeId) {
 
     window.location.href = url.toString();
 
-    if (changeId > 100 || keepId > 100) {
+    if (changeId == 100 || keepId == 100) {
         reset();
     }
 }

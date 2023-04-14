@@ -21,7 +21,7 @@
 body {
     background-color: var(--main-bg-color);
     color: var(--text-color);
-    overflow: hidden;
+    overflow:auto;
 }
 
 button {
@@ -40,6 +40,10 @@ img {
 .option {
     background-color: var(--option-color);
     border: solid var(--dark-accent-color) 4px;
+}
+
+h6 {
+    color: var(--dark-accent-color);
 }
 
 /* 
